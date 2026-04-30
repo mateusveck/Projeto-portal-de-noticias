@@ -3,6 +3,10 @@ main{
 
 }
 
+p::first-letter{
+    text-transform: uppercase;
+}
+
 
 
 #destaques{
@@ -60,13 +64,13 @@ main{
 }
         /* Efeito de hover para as imagens e conteúdo */
 .card:hover img,
-.card-a:hover img, .card-two:hover img {
+.card-a:hover img, .card-two:hover img, .last-notices:hover img{
     transform: scale(1.03);
     filter: brightness(0.8);
 }
 
 .card:hover .content,
-.card-a:hover .content, .card-two img:hover{
+.card-a:hover .content, .card-two img:hover, .last-notices:hover{
     transform: scale(1.03);
 }
 
@@ -90,17 +94,17 @@ main{
     top: 3px;    
 }
 
-#see-more div a {
+#see-more div a, #see-more-two a {
         transition: transform 0.3s ease;
         display: inline-block;
         position: relative;
 }
 
-#see-more div a:hover{
+#see-more div a:hover, #see-more-two:hover a{
     transform: scale(1.1);
 }
 
-#container2{
+#container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
@@ -156,3 +160,112 @@ main{
   
     
 }
+
+/*comecando 3 aba de noticias*/
+
+.card-three{
+    display:grid;
+
+    grid-template-columns: 2fr 1fr;
+    color: var(--text-color-primary);
+}
+
+
+.container-two{
+    font: var(--span);
+    color: var(--text-color-primary);
+    justify-content: space-between;
+    padding: 16px 8px;
+    display: block;
+    width: 100%;
+    
+}
+
+#see-more-two{
+    display: flex;
+    font: var(--span);
+    color: var(--text-color-primary);
+    justify-content: space-between;
+    margin-bottom: 24px;
+    align-items: center;
+    width: 100%;
+      
+}
+
+#see-more-two-right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#see-more-two a{
+    text-decoration: none;
+    color: var(--text-color-primary);
+}
+
+.last-notices{
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    height: 176px;
+    margin-top: 16px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    
+}
+
+.container-two > a:first-of-type .last-notices {
+  margin-top: 32px;
+}
+
+.last-notices h1 {
+    font: var(--heading-two);
+    color: var(--text-color-primary);
+    
+}
+
+.last-notices h2 {
+    font: var(--span);
+    color: var(--text-color-secondary);
+    
+}
+
+.last-notices p{
+    position: absolute;
+    bottom: 158px;
+    left: 8px;
+    background-color: var(--brand-color-dark);
+    padding: 5px;
+    border-radius: 4px;
+    font: var(--span);
+    color: var(--text-color-primary);
+    
+}
+
+.last-notices img{
+    width: 176px;
+    height: 176px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.absolut{
+    position: relative;
+    text-decoration: none;
+
+}
+
+.last-text{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px 0 8px;
+    min-width: 0;
+    
+}
+
+.last-text h2{
+    padding-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    overflow: hidden;
+}
+
