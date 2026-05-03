@@ -17,10 +17,6 @@ p::first-letter{
 }
 
 
-#bignotice{
-    width: 100%;
-    height: 100%;
-}
 .card, .card-a{
     position: relative;
   
@@ -78,7 +74,7 @@ p::first-letter{
     left: 20px;
 }
 
-/* começando segunda parte de noticias*/
+/* Começando segunda parte de notícias. */
 
 #see-more{
     display: flex;
@@ -119,6 +115,7 @@ p::first-letter{
     text-decoration: none;
     position: relative;
     display: block;
+    width: 100%;
 }
 
 .card-two img {
@@ -138,10 +135,12 @@ p::first-letter{
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 10px 0;
+    
 }
 
 .content-two{
     position: relative;
+    
     
 }
 
@@ -161,7 +160,7 @@ p::first-letter{
     
 }
 
-/*comecando 3 aba de noticias*/
+/* Começando 3ª aba de notícias. */
 
 .card-three{
     display:grid;
