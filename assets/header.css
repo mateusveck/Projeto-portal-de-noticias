@@ -60,3 +60,47 @@
     transform: scale(1.1) ;
 }
 
+@media (max-width: 768px) {
+    #nav-primary{
+        gap: 16px;
+        padding: 16px 0;
+    }
+
+    #men a,
+    #search a{
+        padding: 0;
+        margin: 0;
+    }
+
+    #men a p,
+    #search a p{
+        display: none;
+    }
+
+    #men img{
+        margin-right: 0;
+    }
+
+    #search img{
+        padding: 0;
+    }
+
+    #logo h1{
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+
+    #nav-secundary{
+        justify-content: flex-start;
+        gap: 24px;
+        overflow-x: auto;
+        padding: 12px 0;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    #nav-secundary::-webkit-scrollbar{
+        display: none;
+    }
+}
+
